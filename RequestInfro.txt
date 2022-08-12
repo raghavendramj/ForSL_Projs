@@ -1,0 +1,94 @@
+POST:- http://localhost:8083/vaccinecenter
+{ 
+		"state": "Karnataka",
+		"city": "Bangalore",
+		"name": "Marathalli",
+		"users" : [
+			{
+				"name": "Keshav Anand",
+				"email": "keshav.anand@gmail.com" 
+			},
+			{
+				"name": "Raghav MJ",
+				"email": "raghav@gmail.com" 
+			}
+		] 
+}
+
+
+{ 
+		"state": "Karnataka",
+		"city": "Mysore",
+		"name": "KuvempuNagar",
+		"users" : [ 
+			{
+				"name": "Chethan",
+				"email": "chetan@gmail.com" 
+			},
+			{
+				"name": "Johnson",
+				"email": "johnson@gmail.com" 
+			}
+		] 
+}
+
+{ 
+		"state": "TamilNadu",
+		"city": "Chennai",
+		"name": "Anna Nagar",
+		"users" : [ 
+			{
+				"name": "Selvam",
+				"email": "selvam@gmail.com" 
+			},
+			{
+				"name": "Manikantan",
+				"email": "Manikantan@gmail.com" 
+			}
+		] 
+}
+
+{ 
+		"state": "Telangana",
+		"city": "Hydreabad",
+		"name": "Jubli Hills",
+		"users" : [ 
+			{
+				"name": "Apparao",
+				"email": "apparao@gmail.com" 
+			},
+			{
+				"name": "anandrao",
+				"email": "anandrao@gmail.com" 
+			}
+		] 
+}
+-----------------------------------------------------------------------------------------------
+
+
+Exposed End points :- 
+
+Get all vaccination centers :- 
+	http://localhost:8083/vaccinecenter
+
+Get all vaccination center names only :- 
+	http://localhost:8083/vaccinecenter/names
+	
+Get all vaccination center by id:- 
+	http://localhost:8083/vaccinecenter/1
+	
+Get all vaccination center by state:- 
+	http://localhost:8083/vaccinecenter/by/state/karanataka
+	
+Get all vaccination center by city:- 
+	http://localhost:8083/vaccinecenter/by/city/bangalore 
+	
+Get all users :- 
+	http://localhost:8083/users
+	
+Get all users by id :- 
+	http://localhost:8083/users/1
+	
+	
+	
+	
